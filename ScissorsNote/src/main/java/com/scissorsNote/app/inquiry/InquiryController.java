@@ -22,7 +22,7 @@ public class InquiryController {
 		return "inquiry/form";
 	}
 	
-	@PostMapping("/form")
+	@PostMapping("/form")//確認ページから戻るボタンで呼び出し
 	public String formGoBack(InquiryForm inquiryForm, Model model) {
 		model.addAttribute("title", "Inquiry Form");
 		return "inquiry/form";
